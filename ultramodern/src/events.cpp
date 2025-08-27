@@ -181,6 +181,8 @@ void vi_thread_func() {
     ultramodern::set_native_thread_priority(ultramodern::ThreadPriority::Critical);
     using namespace std::chrono_literals;
 
+    set_dummy_vi(false);
+
     int remaining_retraces = 1;
 
     while (!exited) {
